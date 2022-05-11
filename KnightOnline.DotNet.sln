@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnightOnline.DotNet.LoginServer", "KnightOnline.DotNet.LoginServer\KnightOnline.DotNet.LoginServer.csproj", "{7ED40BFF-600B-4E86-90C7-13E3F0532CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnightOnline.DotNet.Common", "KnightOnline.DotNet.Common\KnightOnline.DotNet.Common.csproj", "{F900DE00-8A9F-4A02-9A9E-D084EDD81E47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{33F29FC4-27B7-44FD-AF72-B756E71A86D2}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		.editorconfig = .editorconfig
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ED40BFF-600B-4E86-90C7-13E3F0532CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED40BFF-600B-4E86-90C7-13E3F0532CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED40BFF-600B-4E86-90C7-13E3F0532CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED40BFF-600B-4E86-90C7-13E3F0532CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F900DE00-8A9F-4A02-9A9E-D084EDD81E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F900DE00-8A9F-4A02-9A9E-D084EDD81E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F900DE00-8A9F-4A02-9A9E-D084EDD81E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F900DE00-8A9F-4A02-9A9E-D084EDD81E47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+<Project>
+    
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <LangVersion>10.0</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <SupportedPlatform Include="windows" />
+        <SupportedPlatform Include="linux" />
+        <SupportedPlatform Include="mac" />
+    </ItemGroup>
+    
+</Project>
