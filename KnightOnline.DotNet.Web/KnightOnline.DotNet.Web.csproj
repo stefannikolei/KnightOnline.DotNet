@@ -13,4 +13,8 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\KnightOnline.DotNet.Data\KnightOnline.DotNet.Data.csproj" />
+    </ItemGroup>
+
 </Project>
