@@ -19,7 +19,7 @@ public abstract class KnightOnlineSession : TcpSession
 
     private static bool TryParsePackage(byte[] buffer, out KnightOnlinePackage package)
     {
-        var inputData = buffer.AsSpan();
+        var inputData = buffer.AsMemory();
 
         if (inputData.GetShortFromFirstTwoBytes() != 0x55AA)
         {
@@ -29,10 +29,10 @@ public abstract class KnightOnlineSession : TcpSession
 
         var length = inputData.Slice(2, 2).GetShortFromFirstTwoBytes();
 
-        var opCode = inputData[4];
+        var opCode = inputData.Span[4];
         var data = inputData.Slice(4, length);
         var beginOfTail = length + 4;
-        if (inputData[0] != inputData[beginOfTail + 1] || inputData[1] != inputData[beginOfTail])
+        if (inputData.Span[0] != inputData.Span[beginOfTail + 1] || inputData.Span[1] != inputData.Span[beginOfTail])
         {
             package = default;
             return false;
@@ -71,7 +71,7 @@ public abstract class KnightOnlineSession : TcpSession
 
         for (var i = 0; i < package.Data.Length ; i++)
         {
-            result[i + 5] = package.Data[i];
+            result[i + 5] = package.Data.Span[i];
         }
         
         // byte[] data = packet.getData();
@@ -83,6 +83,6 @@ public abstract class KnightOnlineSession : TcpSession
         // packet.appendData(data);
         // packet.appendData(tail);
         //         
-        this.Send(result.ToArray());
+        Send(result.ToArray());
     }
 }
