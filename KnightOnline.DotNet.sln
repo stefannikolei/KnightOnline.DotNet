@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnightOnline.DotNet.Data", "KnightOnline.DotNet.Data\KnightOnline.DotNet.Data.csproj", "{A827AD8E-433F-46EB-AAF2-2311CA3F82C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnightOnline.DotNet.Web", "KnightOnline.DotNet.Web\KnightOnline.DotNet.Web.csproj", "{11C8FD42-C7D3-4822-A49F-B9832C173EC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,9 @@ Global
 		{A827AD8E-433F-46EB-AAF2-2311CA3F82C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A827AD8E-433F-46EB-AAF2-2311CA3F82C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A827AD8E-433F-46EB-AAF2-2311CA3F82C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C8FD42-C7D3-4822-A49F-B9832C173EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C8FD42-C7D3-4822-A49F-B9832C173EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C8FD42-C7D3-4822-A49F-B9832C173EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C8FD42-C7D3-4822-A49F-B9832C173EC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
